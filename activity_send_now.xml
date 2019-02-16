@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/androidimage"
+    tools:context="com.example.dell.messageebox.SendNowActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/HmtMessage"
+        android:layout_marginTop="59dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Enter your text here..."
+        android:layout_below="@+id/HetMobileNumber"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/HetMobileNumber" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_marginTop="39dp"
+        android:id="@+id/HetMobileNumber"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="MobileNumber"
+        android:phoneNumber="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp" />
+
+    <Button
+        android:text="Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="79dp"
+        android:id="@+id/HbtnSendNow"
+        android:layout_below="@+id/HmtMessage"
+        android:layout_alignStart="@+id/HmtMessage" />
+
+</RelativeLayout>
